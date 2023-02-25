@@ -22,5 +22,12 @@ public class ProduitServiceTest {
         Assertions.assertEquals(0, listProduits.size());
     }
 
+    @Test
+    @Order(2)
+    public void testAddProduit(Produit p){
+        ps.addProduit(p);
+        Assertions.assertEquals(0, p);
+    }
+
 
 }
