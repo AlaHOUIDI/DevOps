@@ -83,6 +83,16 @@
                     </excludes>
                 </configuration>
             </plugin>
+<plugin>
+      <groupId>org.sonatype.plugins</groupId>
+      <artifactId>nexus-staging-maven-plugin</artifactId>
+      <version>1.6.7</version>
+      <extensions>true</extensions>
+      <configuration>
+        <serverId>nexus</serverId>
+        <nexusUrl>http://172.20.10.5:8081/nexus/</nexusUrl>
+      </configuration>
+    </plugin>
 
         </plugins>
     </build>
